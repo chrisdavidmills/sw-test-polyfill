@@ -25,15 +25,15 @@ this.addEventListener("install", function(e) {
     var resourceUrls = [
       '',
       '?offline',
-      '/index.html',
-      '/style.css',
-      '/app.js',
-      '/image-list.js',
-      '/star-wars-logo.jpg',
-      '/gallery/',
-      '/gallery/bountyHunters.jpg',
-      '/gallery/myLittleVader.jpg',
-      '/gallery/snowTroopers.jpg'
+      'index.html',
+      'style.css',
+      'app.js',
+      'image-list.js',
+      'star-wars-logo.jpg',
+      'gallery/',
+      'gallery/bountyHunters.jpg',
+      'gallery/myLittleVader.jpg',
+      'gallery/snowTroopers.jpg'
     ];
 
     return Promise.all(resourceUrls.map(function(relativeUrl) {
