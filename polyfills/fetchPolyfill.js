@@ -40,7 +40,7 @@
             xhr.onreadystatechange = function() {
                 if (xhr.readyState !== 4) return;
 
-                var headers = new HeaderMap();
+                var headers = new Headers();
                 xhr.getAllResponseHeaders().split("\n").forEach(function(h) {
                     if (!h || h.indexOf(":") <= 0) { return; }
                     var hn = h.split(":")[0];

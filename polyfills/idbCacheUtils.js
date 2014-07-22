@@ -286,7 +286,7 @@
     if (typeof Response == "undefined") { return; }
 
     var objToResponse = function(obj) {
-        var headers = new HeaderMap();
+        var headers = new Headers();
         Object.keys(obj.headers).forEach(function(k) {
             headers.set(k, obj.headers[k]);
         });
