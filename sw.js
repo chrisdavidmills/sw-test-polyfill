@@ -23,18 +23,17 @@ notify(baseUrl);
 this.addEventListener("install", function(e) {
   e.waitUntil(caches.create("v1").then(function(v1) {
     var resourceUrls = [
-      "",
-      "?offline",
-      '/sw-test-polyfill/',
-      '/sw-test-polyfill/index.html',
-      '/sw-test-polyfill/style.css',
-      '/sw-test-polyfill/app.js',
-      '/sw-test-polyfill/image-list.js',
-      '/sw-test-polyfill/star-wars-logo.jpg',
-      '/sw-test-polyfill/gallery/',
-      '/sw-test-polyfill/gallery/bountyHunters.jpg',
-      '/sw-test-polyfill/gallery/myLittleVader.jpg',
-      '/sw-test-polyfill/gallery/snowTroopers.jpg'
+      '',
+      '?offline',
+      '/index.html',
+      '/style.css',
+      '/app.js',
+      '/image-list.js',
+      '/star-wars-logo.jpg',
+      '/gallery/',
+      '/gallery/bountyHunters.jpg',
+      '/gallery/myLittleVader.jpg',
+      '/gallery/snowTroopers.jpg'
     ];
 
     return Promise.all(resourceUrls.map(function(relativeUrl) {
